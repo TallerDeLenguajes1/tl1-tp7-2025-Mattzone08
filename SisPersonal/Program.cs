@@ -14,5 +14,34 @@
             empleados[i].MostrarDatos();
         }
 
+
+        double montoTotal = 0;
+
+        for (int i = 0; i < 3; i++)
+        {
+            montoTotal += empleados[i].Salario;
+        }
+
+        Console.WriteLine("--------------------------------------");
+        Console.WriteLine($"Monto total de Salarios: ${montoTotal:N2}");
+        Console.WriteLine("--------------------------------------");
+
+
+        Empleado proximoAJubilarse = empleados[0];
+
+        foreach (Empleado emp in empleados)
+        {
+            if (emp.AniosParaJubilarse < proximoAJubilarse.AniosParaJubilarse)
+            {
+                proximoAJubilarse = emp;
+            }
+        }
+
+        Console.WriteLine("\nEmpleado más próximo a jubilarse:");
+        Console.WriteLine("===================================");
+        proximoAJubilarse.MostrarDatos();
+        Console.WriteLine("===================================");
+
+
         Console.WriteLine("Presione una tecla para salir...");
         Console.ReadKey();
