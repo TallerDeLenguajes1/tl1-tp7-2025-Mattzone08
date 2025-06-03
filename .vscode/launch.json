@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // Si ha cambiado las plataformas de destino, asegúrese de actualizar la ruta de acceso del programa.
-            "program": "${workspaceFolder}/Calculadora/bin/Debug/net9.0/Calculadora.dll",
+            "program": "${workspaceFolder}/SisPersonal/bin/Debug/net9.0/SisPersonal.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Calculadora",
+            "cwd": "${workspaceFolder}/SisPersonal",
             // Para obtener más información sobre el campo \"consola\", consulte https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "integratedTerminal",
             "stopAtEntry": false
